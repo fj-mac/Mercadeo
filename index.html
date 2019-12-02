@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Fiduciaria de los Alpes - Storytelling</title>
   <link rel="stylesheet" href="index.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <div class="main">
+    <br>
     <h1>Fiduciaria de los Alpes</h1>
 
     <h2>Los pilares utilizados para la construcción del proyecto se presentan a continuación: </h2>
-  <img src="images/Pilares.png" alt="Imagen con los pilares" >
-  <h3 class="Content">Con lo anterior, buscamos fortalecer la imagen de la marca por medio del hashtag #TuFiduciaEnTusManos. Para lograr quedar en la mente de los clientes de manera permanente luego pensamos realizar algo innovador. Para esto buscamos diferentes estrategias utilizadas por grandes compañías, donde surgieron ideas como la de Davivienda (el dinero en el lugar equivocado) entre otras. La diferencia entre estas estrategias y otras utilizadas es que rompen con lo tradicional y causan una emoción en el cliente, que inconscientemente asocia la marca con la reacción que sintió al momento de ver la publicidad por primera vez. Así, decidimos buscar una idea que rompiera con lo tradicional, pero que a la ves tuviera un impacto directo y comunicara la solución de fondo, que el proyecto está intentando resolver. El resultado se presenta a continuación:</h3>
- 
-  <div id="ytplayer"></div>
+    <img src="images/Pilares.png" alt="Imagen con los pilares">
+    <h2 class="Content">Con lo anterior, buscamos fortalecer la imagen de la marca por medio del hashtag
+      #TuFiduciaEnTusManos. Para lograr quedar en la mente de los clientes de manera permanente luego pensamos realizar
+      algo innovador. Para esto buscamos diferentes estrategias utilizadas por grandes compañías, donde surgieron ideas
+      como la de Davivienda (el dinero en el lugar equivocado) entre otras. La diferencia entre estas estrategias y
+      otras utilizadas es que rompen con lo tradicional y causan una emoción en el cliente, que inconscientemente asocia
+      la marca con la reacción que sintió al momento de ver la publicidad por primera vez. Así, decidimos buscar una
+      idea que rompiera con lo tradicional, pero que a la ves tuviera un impacto directo y comunicara la solución de
+      fondo, que el proyecto está intentando resolver. El resultado se presenta a continuación:</h2>
+
+    <div id="ytplayer"></div>
   </div>
 
-
   <script>
-      // Load the IFrame Player API code asynchronously.
-      var tag = document.createElement('script');
-      tag.src = "https://www.youtube.com/player_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-    
-      // Replace the 'ytplayer' element with an <iframe> and
-      // YouTube player after the API code downloads.
-      var player;
-      function onYouTubePlayerAPIReady() {
-        player = new YT.Player('ytplayer', {
-          height: '360',
-          width: '640',
-          videoId: 'nTVcVfOEIkk'
-        });
-      }
-    </script>
+    // Load the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/player_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // Replace the 'ytplayer' element with an <iframe> and
+    // YouTube player after the API code downloads.
+    var player;
+    function onYouTubePlayerAPIReady() {
+      player = new YT.Player('ytplayer', {
+        height: '360',
+        width: '640',
+        videoId: 'nTVcVfOEIkk'
+      });
+    }
+  </script>
 </body>
+
 </html>
